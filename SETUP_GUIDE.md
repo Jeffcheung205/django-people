@@ -60,13 +60,13 @@ You have a Django project in your computer at `document/django-people` that you 
 
 3. **Copy your project files** from `document/django-people` to this folder
    - Use File Explorer (Windows) or Finder (Mac) to copy files
-   - Or use command line:
+   - Or use command line (replace the paths with your actual location):
    ```bash
-   # On Windows (Command Prompt)
-   xcopy /E /I C:\Users\YourUsername\Documents\django-people\* .
+   # On Windows (Command Prompt) - Replace with your actual path
+   xcopy /E /I "C:\path\to\your\Documents\django-people\*" .
    
-   # On Mac/Linux
-   cp -r ~/Documents/django-people/* .
+   # On Mac/Linux - Replace with your actual path
+   cp -r ~/path/to/your/django-people/* .
    ```
 
 4. **Check the status:**
