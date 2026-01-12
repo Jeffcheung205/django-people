@@ -1,0 +1,17 @@
+{% block conetent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    {% for p in people %}
+      {{ p.name }}
+      {{ p.age }}
+    {% endfor %}
+</head>
+<body>
+
+</body>
+{% endblock %}
+</html>

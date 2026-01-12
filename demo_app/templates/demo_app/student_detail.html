@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  {{ student.student_card}}
+  <br/>
+  {{ student.first_name }} {{ student.last_name }}
+  <br/>
+   <a href="{% url 'demo_app:student_update' student.pk %}">Update</a>
+   <a href="{% url 'demo_app:student_delete' student.pk %}">Delete</a>
+
+</body>
+</html>

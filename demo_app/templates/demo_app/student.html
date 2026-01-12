@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <ul>
+    {% for s in Students %}
+    <li><a href="{% url 'demo_app:student_detail' s.pk %}">{{s}}</a></li>
+    {% endfor %}
+    <li><a href="{% url 'demo_app:student_create' %}">New Student</a></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   {% if object %}
+   <h1>Edit {{ object }}</h1>
+   {% else %}
+   <h1>Add Student</h1>
+   {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% if object %}Update{% else %}Create{% endif %}</button>
+    </form>
+</body>
+</html>

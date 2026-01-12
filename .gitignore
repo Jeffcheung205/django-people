@@ -1,10 +1,12 @@
 # Python
+__pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+
+# Packaging / build artifacts
 build/
-develop-eggs/
 dist/
 downloads/
 eggs/
@@ -40,51 +42,48 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-/media
-/staticfiles
-/static
-
-# If your build process includes running collectstatic
-# Uncomment the following line if you want to ignore collected static files
-# /static/
-
-# Django secret key
-.env
-*.env
-
-# Environments
-.venv
-env/
+# Virtual environments
+.venv/
 venv/
+env/
 ENV/
 env.bak/
 venv.bak/
 
-# IDEs
+# Django
+*.log
+local_settings.py
+
+# Database
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+
+# Static/media outputs
+/media
+/staticfiles
+/static
+
+# Secrets
+.env
+*.env
+
+# IDEs / editors
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
+Thumbs.db
 
-# PyCharm
-*.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
-.idea/vcs.xml
-.idea/jsLibraryMappings.xml
-
-# mypy
+# Type checkers
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# Pyre type checker
 .pyre/
+
+# Migrations (keep migrations by default)
+# demo_app/migrations/
